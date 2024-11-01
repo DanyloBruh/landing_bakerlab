@@ -1,0 +1,12 @@
+{
+  "name": "Bakerlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css styles -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
