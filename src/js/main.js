@@ -1,4 +1,5 @@
 import { CountUp } from "countup.js/dist/countUp.min.js";
+import "../scss/styles.scss";
 
 const toggle = document.getElementById("hamburger__toggle");
 const button = document.querySelector(".hamburger__btn");
