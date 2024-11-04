@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "watch": "node-sass -o css scss -w"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "sass": "^1.80.6",
     "vite": "^5.4.10"
   },
