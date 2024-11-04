@@ -1,0 +1,134 @@
+.hero-section {
+  width: 100%;
+  display: flex;
+  padding: 32px 0 40px 0;
+  @include on-tablet {
+    padding: 80px 0 228px 0;
+    height: 900px;
+  }
+  @include on-desktop {
+    padding: 0;
+    align-items: center;
+    padding-top: 0;
+    height: 700px;
+  }
+  @include on-desktop-xl {
+    height: 674px;
+  }
+
+  &__content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    @include on-desktop {
+      height: auto;
+    }
+  }
+  &__text {
+    @include font-style-normal;
+    text-align: center;
+    @include on-tablet {
+      text-align: left;
+    }
+  }
+  &__headings {
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 32px 0 290px 0;
+    position: relative;
+    &::before {
+      content: "";
+      width: 288px;
+      height: 290px;
+      position: absolute;
+      z-index: -1;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      background: url("../../images/Cookie.png") center no-repeat;
+      background-size: cover;
+      @include on-tablet {
+        width: 326px;
+        height: 328px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @include on-desktop {
+        width: 544px;
+        height: 546px;
+      }
+      @include on-desktop-xl {
+        width: 584px;
+        height: 586px;
+      }
+    }
+    @include on-tablet {
+      font-size: 80px;
+      line-height: 68px;
+      margin: 146px 0 210px 0;
+    }
+    @include on-desktop {
+      font-size: 136px;
+      line-height: 115px;
+      margin: 40px 0 64px 0;
+    }
+    @include on-desktop-xl {
+      font-size: 144px;
+      line-height: 122px;
+    }
+  }
+  &__btn {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px $color-accent-orange solid;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $color-accent-orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("../../images/icon/cookie.svg") center no-repeat;
+    }
+    &:focus,
+    &:hover {
+      @include on-tablet {
+        background-color: $color-accent-orange;
+        color: #ffffff;
+        &::before {
+          filter: brightness(0) saturate(100%) invert(100%);
+        }
+      }
+    }
+
+    &:active {
+      background-color: $color-dark-orange;
+      border: 2px $color-dark-orange solid;
+      color: #ffffff;
+      fill: #ffffff;
+      &::before {
+        filter: brightness(0) saturate(100%) invert(100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.section {
+  &__headings {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 41px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    @include on-tablet {
+      font-size: 56px;
+      line-height: 48px;
+    }
+    @include on-desktop {
+      font-size: 72px;
+      line-height: 61px;
+    }
+  }
+  &__text {
+    @include font-style-normal;
+  }
+}
