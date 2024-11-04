@@ -84,7 +84,7 @@
         display: block;
         width: 28px;
         height: 28px;
-        background: url("../../images/icon/phone.svg") center no-repeat;
+        background: url("../src/images/icon/phone.svg") center no-repeat;
         margin-right: 4px; }
       .header__link--contact:hover:before {
         -webkit-animation: wiggle 0.1s alternate ease infinite;
@@ -209,7 +209,7 @@
       bottom: 0px;
       left: 50%;
       transform: translate(-50%, 100%);
-      background: url("../../images/Cookie.png") center no-repeat;
+      background: url("../src/images/Cookie.png") center no-repeat;
       background-size: cover; }
       @media (min-width: 640px) {
         .hero-section__headings::before {
@@ -396,7 +396,7 @@
       content: "";
       width: 24px;
       height: 24px;
-      background: url("../../images/icon/arrow.svg") center no-repeat;
+      background: url("../src/images/icon/arrow.svg") center no-repeat;
       margin-right: 8px;
       transition: 0.1s ease-in; }
     .product__link:hover::before {
@@ -417,7 +417,7 @@
     .about-section {
       padding-top: 178px; } }
   .about-section__content {
-    background: url("../../images/Crumbs.png") center no-repeat;
+    background: url("../src/images/Crumbs.png") center no-repeat;
     background-size: contain; }
     @media (min-width: 1024px) {
       .about-section__content {
@@ -452,11 +452,6 @@
       letter-spacing: -0.05em;
       text-transform: uppercase;
       margin-bottom: 8px; }
-      .about-section__item__value--year {
-        animation: counter-year 5s alternate ease-in-out;
-        counter-reset: num var(--num); }
-        .about-section__item__value--year::after {
-          content: counter(num); }
     .about-section__item__title {
       font-family: Inter;
       font-size: 16px;
@@ -465,12 +460,6 @@
       text-align: left;
       color: #1c1a26;
       color: #7f8096; }
-
-@keyframes counter-year {
-  from {
-    --num: 2000; }
-  to {
-    --num: 2015; } }
 
 .footer {
   background-color: #1c1a26;

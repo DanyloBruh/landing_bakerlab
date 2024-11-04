@@ -1,4 +1,4 @@
-import { CountUp } from "../node_modules/countup.js/dist/countUp.min.js";
+import { CountUp } from "countup.js/dist/countUp.min.js";
 
 const toggle = document.getElementById("hamburger__toggle");
 const button = document.querySelector(".hamburger__btn");
