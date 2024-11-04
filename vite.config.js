@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src',
+  root: "/",
   build: {
-    outDir: '..',
-    base: 'landing_bakerlab', 
+    outDir: "../dist",
+    base: "landing_bakerlab",
   },
 });
