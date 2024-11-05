@@ -97,10 +97,12 @@
         background: url("/images/icon/phone.svg") center no-repeat;
         margin-right: 4px;
         overflow: visible;
-        @include on-tablet {
-          position: absolute;
-          left: 0px;
-          transform: translateX(-100%);
+        position: absolute;
+        left: 0px;
+        transform: translateX(-100%);
+        @include on-desktop {
+          position: relative;
+          transform: translateX(0);
         }
       }
       &:hover:before {
